@@ -1,26 +1,70 @@
 .hero {
-    padding: 100px 20px;
-    text-align: center;
-    background: #f0f0f0;
-  }
-  
+  padding: 100px 20px;
+  text-align: center;
+  background: #aedaf7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hero-buttons .download-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-buttons .download-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
-  
+
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0 10px;
   }
-  
-  .hero button {
-    margin-top: 20px;
-    padding: 10px 20px;
-  }
+
   .hero-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
   }
-  
-  
+}

@@ -1,7 +1,8 @@
 .footer {
     padding: 20px;
-    background-color: #222;
+    background: rgb(142, 147, 148);
     color: white;
     text-align: center;
+    border-radius: 5px;
   }
   

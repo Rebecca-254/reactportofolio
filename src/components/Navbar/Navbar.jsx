@@ -9,7 +9,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToSection }) => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="brand">John Doe</div>
+        <div className="brand">Rebecca Gitau</div>
         <div className="links-desktop">
           {links.map((link) => (
             <button key={link} onClick={() => scrollToSection(link)}>{link.charAt(0).toUpperCase() + link.slice(1)}</button>
